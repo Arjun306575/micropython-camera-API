@@ -32,9 +32,9 @@
 
 #define TAG "MPY_CAMERA"
 
-#if !CONFIG_SPIRAM
-#error Camera only works on boards configured with spiram
-#endif
+// #if !CONFIG_SPIRAM
+// #error Camera only works on boards configured with spiram
+// #endif
 
 // Helper functions
 static int map(int value, int fromLow, int fromHigh, int toLow, int toHigh) {
