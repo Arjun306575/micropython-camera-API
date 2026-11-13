@@ -153,7 +153,7 @@ void mp_camera_hal_construct(
         set_check_grab_mode(self, grab_mode);
 
         // defaul parameters
-        self->camera_config.fb_location = CAMERA_FB_IN_PSRAM;
+        self->camera_config.fb_location = CAMERA_FB_IN_DRAM;
         self->camera_config.ledc_timer = LEDC_TIMER_3;
         self->camera_config.ledc_channel = LEDC_CHANNEL_0;
 
