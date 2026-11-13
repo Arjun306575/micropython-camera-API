@@ -92,10 +92,6 @@ jobs:
       fail-fast: false
       matrix:
         board:
-          strategy:
-      fail-fast: false
-      matrix:
-        board:
           - ESP32_GENERIC
 
     steps:
