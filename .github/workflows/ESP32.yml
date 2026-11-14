@@ -156,6 +156,7 @@ jobs:
           FINAL_CMD="${IDF_CMD} build"
           
           make BOARD=$BOARD_NAME submodules
+          find /home/runner -name "cam_hal.c" -exec sed -i 's/cam_obj->frames\[frame_pos\]\.en = 1;/\/\/ cam_obj->frames[frame_pos].en = 1;/g' {} +
           echo "Running command: $FINAL_CMD"
           eval $FINAL_CMD
           cd ~/micropython/ports/esp32/build-${BUILD_TARGET}
